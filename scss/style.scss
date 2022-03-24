@@ -25,6 +25,7 @@
 body {
   font-family: 'Nunito', sans-serif;
   @include fonts(300,16px,20px);
+
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -95,6 +96,29 @@ img {
     background-color: #415167;
     color: #EDF0F5;
     padding: 11vh 0 0 4vw;
+    transition: all 0.5s ease;
+    position: absolute;
+    right: 0;
+    height: 100vh;
+      .naw-wrapper__move {
+        @extend %title;
+        display: none;
+        margin: 0;
+        position: absolute;
+        transform: rotate(-90deg);
+        left: -3vw;
+        top: 50vh;
+        width: 150px;
+      }
+      &:not(:hover) {
+        width: 0.01vw;
+          .nav-wrapper__hover-container {
+            display: none;
+          }
+          .naw-wrapper__move {
+            display: block;
+          }
+      }
       .user-nav__list {
         display: flex;
         gap: 25px;
@@ -110,6 +134,9 @@ img {
       }
   }
 }
+
+
+
 
 .shopping-cart {
   position: relative;
