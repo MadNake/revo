@@ -348,10 +348,29 @@ template {
   line-height: 70px;
 }
 
-.main-header .nav-wrapper .naw-wrapper__move {
+.features__title {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 34px;
+}
+
+.features__item .items__title, .main-header .nav-wrapper .naw-wrapper__move {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+}
+
+.features__subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.features__item .items__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #151D28;
 }
 
 body {
@@ -441,7 +460,7 @@ img {
   transition: all 0.5s ease;
   position: absolute;
   right: 0;
-  height: 100vh;
+  height: 89vh;
 }
 .main-header .nav-wrapper .naw-wrapper__move {
   display: none;
@@ -481,6 +500,73 @@ img {
 }
 .main-header .nav-wrapper .site-nav__list .site-nav__item_active {
   font-weight: 700;
+}
+
+.features__conteiner {
+  height: 60vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.features__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 85px 148px 125px 148px;
+}
+.features__title {
+  color: #415167;
+  margin-bottom: 90px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.features__subtitle {
+  color: #415167;
+  margin: 0 0 5 px 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3vw;
+}
+.features__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.features__item .items__title {
+  margin: 44px 0 12px;
+  color: #232C38;
+}
+.features__item .items__text {
+  text-align: center;
 }
 
 .shopping-cart {
