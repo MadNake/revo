@@ -8,29 +8,34 @@
 
 %displayLarge {
   @include fonts(900,54px,70px); //black
+  margin: 0;
 }
 
 %displayMedium {
   @include fonts(900,30px,34px); //black
+  margin: 0;
 }
 
 %title {
   @include fonts(700,24px,28px);  //bold
+  margin: 0;
 }
 
 %subTitle {
   @include fonts(600,20px,24px); //semi-bold
+  margin: 0;
 }
 
 %regular {
   @include fonts(300,16px,20px);
   color: #151D28;
+  margin: 0;
 }
 
 body {
   font-family: 'Nunito', sans-serif;
   @include fonts(300,16px,20px);
-
+  background: #F9FBFF;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -58,6 +63,17 @@ img {
   max-width: 100vw;
   height: 100vh;
   display: flex;
+}
+
+.title {
+  @extend %displayMedium;
+  color: #415167;
+}
+
+.subtitle {
+  @extend %subTitle;
+  color: #415167;
+  margin: 0 0 5px 0;
 }
 
 .main-header {
@@ -144,6 +160,7 @@ img {
   &__conteiner {
     height: 60vh;
     justify-content: center;
+    margin-bottom: 130px;
   }
   &__wrapper {
     display: flex;
@@ -152,22 +169,17 @@ img {
     align-self: flex-start;
     margin: 85px 148px 125px 148px;
   }
-  &__title {
-    @extend %displayMedium;
-    color: #415167;
-    margin-bottom: 90px;
+  &__subtitle, &__title {
     align-self: center;
   }
-  &__subtitle {
-    @extend %subTitle;
-    color: #415167;
-    margin: 0 0 5 px 0;
-    align-self: center;
+  &__title {
+    margin-bottom: 90px;
   }
   &__list {
     display: flex;
     justify-content: center;
     gap: 3vw;
+    align-items: flex-start;
   }
   &__item {
     display: flex;
@@ -186,6 +198,80 @@ img {
   }
 }
 
+.coffee {
+  &__wrapper-content {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__conteiner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .coffee__wrapper-blue{
+      background-color: #415167;
+      width: 27vw;
+      height: 100vh;
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__subtitle {
+    margin-top: 90px;
+  }
+  &__title {
+    margin-bottom: 70px;
+  }
+  &__grid-conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin-left: 8vw;
+  }
+  &__grid-item {
+    display: flex;
+    background-color: #fff;
+    filter: drop-shadow(0px 4px 24px rgba(205, 205, 205, 0.5));
+    width: 40vw;
+    .grid-item__content {
+      margin: 42px 0 0 45px; ;
+    }
+    .grid-item__price {
+      @extend %subTitle;
+      color: #C7A17A;
+      margin-bottom: 10px;
+    }
+    .grid-item__title {
+      @extend %title;
+      color: #232C38;
+      margin-bottom: 24px;
+    }
+    .grid-item__text {
+      color: #151D28;
+      margin-bottom: 25px;
+    }
+    .grid-item__btn {
+      border: 0;
+      border-radius: 19px;
+      background-color: #C7A17A;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 6px 15px;
+      display: inline-block;
+      font-weight: 700;
+      margin-right: 30px;
+      cursor: pointer;
+    }
+    .grid-item__link {
+      font-weight: 700;
+      color: #415167;
+    }
+    }
+}
 
 .shopping-cart {
   position: relative;
