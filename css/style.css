@@ -487,7 +487,7 @@ img {
   position: absolute;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-  right: 0;
+  right: -35px;
   top: 50vh;
   width: 150px;
 }
@@ -732,12 +732,15 @@ img {
   background-color: #fff;
   margin-left: 27vw;
   border: solid 1px #dedede;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.giftset__content_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .giftset__slide-bar {
   display: -ms-grid;
@@ -911,6 +914,15 @@ img {
       -ms-flex-align: baseline;
           align-items: baseline;
   margin: 0 42px 42px 42px;
+}
+
+.main-footer__container {
+  height: 5vh;
+  background-color: #EDF0F5;
+  color: #415167;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slide-btn {

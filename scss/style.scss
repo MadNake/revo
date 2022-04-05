@@ -132,7 +132,7 @@ img {
         margin: 0;
         position: absolute;
         transform: rotate(-90deg);
-        right: 0;
+        right: -35px;
         top: 50vh;
         width: 150px;
       }
@@ -313,8 +313,11 @@ img {
     background-color: #fff;
     margin-left: 27vw;
     border: solid 1px rgba(222, 222, 222, 1);
-    display: flex;
+    display: none;
     justify-content: space-between;
+      &_active {
+        display: flex;
+      }
   }
   &__slide-bar {
     display: grid;
@@ -455,6 +458,15 @@ img {
     margin: 0 42px 42px 42px;
   }
 
+}
+
+.main-footer {
+  &__container {
+    height: 5vh;
+    background-color: #EDF0F5;
+    color: #415167;
+    justify-content: center;
+  }
 }
 
   .slide-btn {
