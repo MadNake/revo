@@ -88,18 +88,6 @@ img {
     justify-content: space-between;
     flex-direction: column;
     padding: 75px 1vw 65px 13vw;
-      /*.main-header__title {
-        font-size: 54px;
-        line-height: 70px;
-        color: #415167;
-        text-transform: uppercase;
-          .main-header__title_special {
-            background-color: #C7A17A;
-            position: absolute;
-            color: #fff;
-          }
-      }*/
-  // Записи вверху и внизу одинаково правильные, но как лучше?
   }
   &__title {
     @extend %displayLarge;
@@ -121,11 +109,11 @@ img {
     width: 18vw;
     background-color: #415167;
     color: #EDF0F5;
-    padding: 11vh 0 0 4vw;
-    transition: all 0.5s ease;
+
+    transition: all 0.75s ease;
     position: absolute;
     right: 0;
-    height: 89vh;
+    height: 100vh;
       .naw-wrapper__move {
         @extend %title;
         display: none;
@@ -136,8 +124,11 @@ img {
         top: 50vh;
         width: 150px;
       }
+      .nav-wrapper__hover-container {
+        padding: 11vh 0 0 4vw;
+      }
       &:not(:hover) {
-        width: 0.01vw;
+        width: 4vw;
           .nav-wrapper__hover-container {
             display: none;
           }
@@ -241,9 +232,9 @@ img {
     width: 40vw;
     opacity: 0.5;
     .grid-item__content {
-      margin: 42px 0 0 45px; ;
+      padding: 42px 0 0 45px;
+      flex-grow: 1;
     }
-
     .grid-item__price {
       margin-bottom: 10px;
     }
@@ -255,8 +246,15 @@ img {
     .grid-item__text {
       color: #151D28;
       margin-bottom: 25px;
+      padding-right: 5px;
+      }
     }
-
+    .grid-item__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-right: 20px;
+    }
 
     }
   &__grid-item_active {
@@ -274,7 +272,6 @@ img {
   padding: 6px 15px;
   display: inline-block;
   font-weight: 700;
-  margin-right: 3vw;
   cursor: pointer;
 }
 
@@ -369,8 +366,15 @@ img {
     color:#415167;
     padding-left: 52px;
     position: relative;
-    margin-right: 4vw;
-    margin-bottom: 46px;
+      &-wrapper {
+        margin-bottom: 46px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+          .item__link {
+            padding-right: 50px;
+          }
+      }
       b {
         font-weight: bold;
       }
@@ -393,9 +397,7 @@ img {
     top: 0;
     background-image: url("/img/IC_Mountain.svg");
   }
-  &-item__btn {
-    margin-right: 9vw;
-  }
+
 
 
 
@@ -421,21 +423,25 @@ img {
   }
   &__title {
     margin-bottom: 65px;
+
   }
   &__carts {
     display: flex;
     gap: 40px;
     position: relative;
+
   }
   &__cart {
     background-color: #fff;
-    width: 25vw;
+    min-width: 25vw;
+    max-width: 28vw;
     box-shadow: 1px 1px 41px -29px #000;
       &-img {
         width: 100%;
       }
       &-title {
         margin: 10px 42px;
+        @extend %title;
       }
       &-price {
         margin: 34px 0 0 42px;
