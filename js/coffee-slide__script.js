@@ -8,7 +8,7 @@ let items = document.querySelectorAll(".coffee__grid-item"),
 beforeZone = document.querySelector(".side-zone_before"),
 itemsLength = items.length;
 
-//--------------------------------
+/*--------------------------------
 
 function test() {
   for (let i = 0; i < itemsLength.length; i++) {
@@ -17,9 +17,4 @@ function test() {
 };
 test();
 
-//---- Код вверху не работает-----------
-
-//btn_next.addEventListener("click", function(evt) {
-//  evt.preventDefault();
-//  items[0].
-//})
+---- Код вверху не работает-----------*/
