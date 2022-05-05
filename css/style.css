@@ -838,6 +838,8 @@ img {
           align-items: center;
   -webkit-box-shadow: inset 7px 0 9px -9px rgba(0, 0, 0, 0.7);
           box-shadow: inset 7px 0 9px -9px rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 .giftset__slide-bar-item_active {
   opacity: 1;
@@ -846,6 +848,8 @@ img {
           box-shadow: none;
   border: solid 1px #dedede;
   cursor: default;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 .giftset__img {
   margin-left: -250px;

@@ -362,6 +362,7 @@ img {
     justify-content: center;
     align-items: center;
     box-shadow: inset 7px 0 9px -9px rgba(0,0,0,0.7);
+    transition: all 0.7s ease;
   }
   &__slide-bar-item_active {
     opacity: 1;
@@ -369,6 +370,7 @@ img {
     box-shadow: none;
     border: solid 1px rgba(222, 222, 222, 1);
     cursor: default;
+    transition: all 0.7s ease;
   }
   &__img {
     margin-left: -250px;
