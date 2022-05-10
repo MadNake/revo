@@ -231,6 +231,16 @@ img {
         margin-left: -34vw;
       }
   }
+  &__slider {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  .coffee__slide {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+  }
   &__grid-conteiner_active-zone {
     display: grid;
     grid-template-columns: 1fr 1fr  ;
