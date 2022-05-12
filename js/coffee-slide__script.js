@@ -13,11 +13,6 @@ itemsLength = items.length;
 //////////////////////////////
 
 $(function() {
-
-$('.coffee__lider').slick({
-  infininte: true,
-  slidesToShow: 2,
-  slidesToScroll: 2
-});
+$('.combo__carts').slick();
 
 })
