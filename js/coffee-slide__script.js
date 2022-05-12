@@ -13,6 +13,8 @@ itemsLength = items.length;
 //////////////////////////////
 
 $(function() {
-$('.combo__carts').slick();
+$('.combo__crts').slick({
+
+});
 
 })

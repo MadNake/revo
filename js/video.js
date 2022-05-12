@@ -15,3 +15,16 @@ $(function () {
     }
   });
 });
+
+function changeItem() {
+  document.getElementById('video').classList.add("blackout");
+  document.getElementById('header').classList.add("blackout");
+
+}// функция, которая сработает при наведении.
+//она означает - выбрать элемент к Id у которого надо что-то изменить.
+// когда в скобки где написано one-two добавите Id своего элемента
+function rechangeItem() {
+  document.getElementById('video').classList.remove("blackout");
+  document.getElementById('header').classList.remove("blackout");
+
+}// тут всё также. но наобарот. протсес происходящий про отводе курсора.

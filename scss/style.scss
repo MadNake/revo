@@ -33,7 +33,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -111,6 +111,7 @@ img {
   #video {
     width: 100%;
     position: relative;
+
     &-over {
     position: absolute;
     top: 0;
@@ -165,9 +166,18 @@ img {
     }
   }
   }
-  &__video-wrapper video {
+
+  .blackout:after {
+    content: "";
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.5);
 
   }
+
   .nav-wrapper {
     width: 18vw;
     background-color: #415167;
@@ -177,6 +187,7 @@ img {
     right: 0;
     height: 100vh;
     z-index: 1;
+
       .naw-wrapper__move {
         @extend %title;
         display: none;

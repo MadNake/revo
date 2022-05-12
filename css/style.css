@@ -508,6 +508,15 @@ img {
   opacity: 0;
   visibility: hidden;
 }
+.main-header .blackout:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
 .main-header .nav-wrapper {
   width: 18vw;
   background-color: #415167;
