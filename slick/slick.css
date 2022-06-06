@@ -1,0 +1,12 @@
+.slick-track {
+  display: flex;
+  gap: 20px
+}
+
+.slick-slide {
+  width: 100%;
+}
+
+.slick-list {
+  overflow: hidden;
+}
