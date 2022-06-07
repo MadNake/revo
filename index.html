@@ -2,8 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="slick/slick.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Nunito:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
@@ -158,41 +160,7 @@
                   </div>
                 </div>
               </div>
-
-              <!-- <button class="coffee__slide-btn slide-btn coffee__slide-btn_next coffee__slide-btn_next_active" type="button" name="button">
-                <svg width="24" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.161.256a.843.843 0 0 0-1.21 0 .864.864 0 0 0 0 1.206l6.134 6.178H.847A.846.846 0 0 0 0 8.494c0 .475.375.865.847.865h20.238l-6.133 6.167a.88.88 0 0 0 0 1.218c.338.341.883.341 1.21 0l7.584-7.64a.843.843 0 0 0 0-1.207L16.161.256Z" fill="#F9FBFF"/></svg>
-              </button> -->
-
             </div>
-            <!-- <div class="coffee__grid-conteiner_side-zone side-zone_after">
-              <div class="coffee__grid-item grid-item ">
-                <img src="img/grid-item1.jpg" alt="">
-                <div class="grid-item__content">
-                  <p class="grid-item__price price">99.000</p>
-                  <p class="grid-item__title">REVO Morning</p>
-                  <p class="grid-item__text">đắng, hậu ngọt, hương hoa</p>
-                  <div class="grid-item__wrapper">
-                    <button class="grid-item__btn item__btn" type="button" name="button">mua ngay</button>
-                    <a class="grid-item__link item__link" href="#">CHI TIẾT</a>
-                  </div>
-                </div>
-              </div>
-              <div class="coffee__grid-item grid-item ">
-                <img src="img/grid-item1.jpg" alt="">
-                <div class="grid-item__content">
-                  <p class="grid-item__price price">99.000</p>
-                  <p class="grid-item__title">REVO Morning</p>
-                  <p class="grid-item__text">đắng, hậu ngọt, hương hoa</p>
-                  <div class="grid-item__wrapper">
-                    <button class="grid-item__btn item__btn" type="button" name="button">mua ngay</button>
-                    <a class="grid-item__link item__link" href="#">CHI TIẾT</a>
-                  </div>
-                </div>
-              </div>
-
-            </div> -->
-
-          <!-- </div> -->
         </div>
       </div>
     </section>
@@ -262,8 +230,10 @@
     <section id="combo" class="combo">
       <div class="combo__container container">
         <div class="combo__background"></div>
-        <p class="combo__subtitle subtitle">Your Personalized Coffee</p>
-        <h2 class="combo__title title">COMBO PHIN PHÊ</h2>
+        <div class="combo-centr-wrapper">
+          <p class="combo__subtitle subtitle">Your Personalized Coffee</p>
+          <h2 class="combo__title title">COMBO PHIN PHÊ</h2>
+        </div>
         <div class="combo__carts">
           <div class="combo__cart">
             <img class="combo__cart-img" src="img/cart__img1.jpg" alt="combo coffee" width="360" height="300">
@@ -298,6 +268,18 @@
             <a class="combo-item__link item__link" href="#">CHI TIẾT</a>
             </div>
           </div>
+          <div class="combo__cart">
+            <img class="combo__cart-img" src="img/cart__img1.jpg" alt="combo coffee" width="360" height="300">
+            <p class="combo__cart-price price">147.000</p>
+            <p class="combo__cart-price_crossed">155.000</p>
+            <p class="combo__cart-title title">Combo Revo Đậm Đà</p>
+            <p class="combo__cart-text text">Hàm lượng caffein trong Revo Đậm Đà đủ mạnh để làm bạn tỉnh táo làm việc...</p>
+            <div class="combo__flex-wrapper">
+            <button class="combo-item__btn item__btn" type="button" name="button">mua ngay</button>
+            <a class="combo-item__link item__link" href="#">CHI TIẾT</a>
+            </div>
+          </div>
+
           <!-- <button class="combo__slide-btn slide-btn combo__slide-btn_next" type="button" name="button">
             <svg width="24" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.161.256a.843.843 0 0 0-1.21 0 .864.864 0 0 0 0 1.206l6.134 6.178H.847A.846.846 0 0 0 0 8.494c0 .475.375.865.847.865h20.238l-6.133 6.167a.88.88 0 0 0 0 1.218c.338.341.883.341 1.21 0l7.584-7.64a.843.843 0 0 0 0-1.207L16.161.256Z" fill="#F9FBFF"/></svg> -->
         </div>
@@ -308,7 +290,8 @@
         <p>© Revo Coffee Việt Nam - 2018</p>
       </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="js/giftset__script.js"></script>
     <script type="text/javascript" src="js/video.js"></script>

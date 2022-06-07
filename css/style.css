@@ -1027,7 +1027,7 @@ img {
           align-items: baseline;
 }
 .giftset__desc-item-wrapper .item__link {
-  padding-right: 50px;
+  margin-right: 50px;
 }
 .giftset__desc-item b {
   font-weight: bold;
@@ -1064,13 +1064,22 @@ img {
   right: 0;
 }
 .combo__container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.combo .combo-centr-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .combo__subtitle {
   margin-top: 90px;
@@ -1078,20 +1087,8 @@ img {
 .combo__title {
   margin-bottom: 65px;
 }
-.combo__carts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 40px;
-  position: relative;
-  min-width: 0;
-}
-.combo__carts .combo__slide-btn_next {
-  right: -3.5vw;
-}
 .combo__cart {
   background-color: #fff;
-  max-width: 360px;
   -webkit-box-shadow: 1px 1px 41px -29px #000;
           box-shadow: 1px 1px 41px -29px #000;
 }
