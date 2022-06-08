@@ -16,13 +16,12 @@
 .slick-active {
   opacity: 1;
 }
-
 .slick-list {
   overflow: hidden;
   padding:0 10% 0 0;
 }
 
-.combo__carts .slick-arrow {
+.slick-arrow {
   top: 50%;
   z-index: 1;
   font-size: 0;
@@ -37,11 +36,11 @@
   background-color: #C7A17A;
 }
 
-.combo__carts .slick-prev {
+.slick-prev {
   left: 0;
   transform: rotate(180deg);
 }
 
-.combo__carts .slick-next {
+.slick-next {
   right: -9px;
 }

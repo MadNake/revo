@@ -7,3 +7,12 @@ $(document).ready(function(){
     slidesToScroll: 1
   });
 });
+
+$(document).ready(function(){
+  $('.coffee__slider').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    
+  });
+});

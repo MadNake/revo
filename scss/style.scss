@@ -327,10 +327,12 @@ img {
     display: flex;
     justify-content: center;
     gap: 30px;
+    min-width: 0;
   .coffee__slide {
     display: flex;
     gap: 30px;
     flex-direction: column;
+    background-color: red;
   }
   }
   &__grid-conteiner_active-zone {

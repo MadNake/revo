@@ -763,6 +763,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
+  min-width: 0;
 }
 .coffee__slider .coffee__slide {
   display: -webkit-box;
@@ -773,6 +774,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: red;
 }
 .coffee__grid-conteiner_active-zone {
   display: -ms-grid;
