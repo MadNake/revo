@@ -330,9 +330,8 @@ img {
     min-width: 0;
   .coffee__slide {
     display: flex;
-    gap: 30px;
+    gap: 30px;  
     flex-direction: column;
-    background-color: red;
   }
   }
   &__grid-conteiner_active-zone {
@@ -569,9 +568,6 @@ img {
   }
   &__title {
     margin-bottom: 65px;
-  }
-  &__carts {
-
   }
   &__cart {
     background-color: #fff;
